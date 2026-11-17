@@ -1,0 +1,171 @@
+/* Common task row styling */
+.table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-top: 10px;
+}
+
+.table tbody tr {
+    transition: all 0.3s ease;
+}
+
+/* Completed task - Green */
+.completed-task td {
+    background: #edf8f1 !important;
+    color: #246b45;
+    border-top: 1px solid #a8d5b8;
+    border-bottom: 1px solid #a8d5b8;
+}
+
+.completed-task td:first-child {
+    border-left: 4px solid #28a36a;
+    border-radius: 10px 0 0 10px;
+}
+
+.completed-task td:last-child {
+    border-right: 1px solid #a8d5b8;
+    border-radius: 0 10px 10px 0;
+}
+
+/* In progress - Blue */
+.progress-task td {
+    background: #eef5ff !important;
+    color: #28558c;
+    border-top: 1px solid #b6d0f5;
+    border-bottom: 1px solid #b6d0f5;
+}
+
+.progress-task td:first-child {
+    border-left: 4px solid #4285d4;
+    border-radius: 10px 0 0 10px;
+}
+
+.progress-task td:last-child {
+    border-right: 1px solid #b6d0f5;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Hover effects */
+.completed-task:hover td {
+    background: #dff1e5 !important;
+}
+
+.progress-task:hover td {
+    background: #dfebfc !important;
+}
+
+/* Completed task title */
+.completed-task .task-title {
+    text-decoration: line-through;
+    color: #718579;
+}
+
+.completed-task .task-title {
+text-decoration: line-through;
+color: #6c757d;
+}
+
+
+/* Common button styling */
+.btn {
+    border: none;
+    border-radius: 8px;
+    padding: 9px 16px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+}
+
+/* Hover effect */
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+    filter: brightness(1.08);
+}
+
+/* Click effect */
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: none;
+}
+
+/* Delete */
+.btn-danger {
+    background: #e63946;
+}
+
+/* Finished */
+.btn-success {
+    background: #198754;
+}
+
+/* Unfinished */
+.btn-warning {
+    background: #f4a261;
+    color: #212529;
+}
+
+/* Add Task */
+.btn-primary {
+    background: linear-gradient(135deg, #4776e6, #7045d8);
+}
+
+/* Focus accessibility */
+.btn:focus-visible {
+    outline: 3px solid #86b7fe;
+    outline-offset: 3px;
+}
+
+/* Global typography */
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #343a40;
+}
+
+/* Main heading */
+h4 {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    color: #212529;
+}
+
+/* Table headings */
+.table thead th {
+    font-size: 17px;
+    font-weight: 700;
+    color: #343a40;
+}
+
+/* Task names */
+.task-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Status text */
+.table td {
+    font-size: 16px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+/* Buttons */
+.btn {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 18px;
+}
+
+/* Input field */
+.form-control {
+    font-size: 16px;
+    padding: 11px 14px;
+}
+
+.form-control::placeholder {
+    font-size: 15px;
+}
